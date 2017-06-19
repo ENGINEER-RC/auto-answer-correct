@@ -1,0 +1,66 @@
+https://pypi.python.org/pypi/language-check
+https://pypi.python.org/pypi/autocorrect/0.2.0
+https://pypi.python.org/pypi/jellyfish
+http://www.nltk.org/api/nltk.stem.html
+https://pypi.python.org/pypi/PyDictionary/1.3.4
+
+
+print(len(tool.check(text)))
+
+
+from nltk.corpus import wordnet
+from itertools import chain
+def syn_fetcher(word):
+    synonyms = wordnet.synsets(word)
+    return list(set(chain.from_iterable([word.lemma_names() for word in synonyms])))
+
+>>> 
+>>> 
+{'res_publica', 'country', 'rural_area', 'commonwealth', 'state', 'nation', 'land', 'area', 'body_politic'}
+>>>
+
+
+http://www.nltk.org/api/nltk.tag.html
+
+{'Fourth_Council_of_Constantinople', 'First_Council_of_Constantinople', 'Stamboul', 'Third_Council_of_Constantinople', 'Istanbul', 'Stambul', 'Second_Council_of_Constantinople', 'Constantinople'}
+{'tellurian', 'mundane', 'telluric', 'terrene', 'sublunar', 'sublunary', 'planetary', 'terrestrial'}
+set()
+{'step-up', 'addition', 'gain', 'increase', 'growth', 'increment'}.
+
+>>> dictionary.synonym("Tomrock")
+['track', 'truck', 'tricky', 'defrock', 'tommyrot']
+>>> syn_fetcher("Tomrock")
+set()
+>>> dictionary.synonym("Ricky")
+['rick', 'rock', 'ruck', 'icky', 'pricky']
+>>> syn_fetcher("Ricky")
+set()
+>>> dictionary.synonym("way")
+['style', 'fashion', 'form', 'means', 'process']
+>>> syn_fetcher("way")
+{'means', 'elbow_room', 'style', 'mode', 'fashion', 'agency', 'room', 'right_smart', 'direction', 'way', 'manner', 'path', 'way_of_life'}
+>>> syn_fetcher("increase")
+{'increment', 'growth', 'gain', 'increase', 'step-up', 'addition'}
+>>> dictionary.synonym("increase")
+['development', 'raise', 'merger', 'hike', 'rise']
+>>> dictionary.synonym("conquer")
+['subdue', 'rout', 'crush', 'quell', 'overthrow']
+>>> syn_fetcher("conquer")
+{'suppress', 'inhibit', 'stamp_down', 'seize', 'conquer', 'subdue', 'curb', 'capture', 'appropriate'}
+>>> dictionary.synonym("closed")
+['locked', 'bankrupt', 'sealed', 'fastened', 'dark']
+>>> syn_fetcher("closed")
+{'shut_down', 'closed', 'unopen', 'fold', 'come_together', 'fill_up', 'close_down', 'shut', 'close', 'unsympathetic', 'conclude', 'closed_in', 'close_up'}
+>>> syn_fetcher("european")
+{'European'}
+>>> dictionary.synonym("european")
+['reopen', 'are open', 'eupnea', 'ripen', 'open']
+>>> syn_fetcher("europe")
+{'EEC', 'European_Economic_Community', 'EC', 'Europe', 'European_Community', 'Common_Market', 'EU', 'European_Union'}
+>>> dictionary.synonym("europe")
+['rope', 'elope', 'erode', 'erose', 'euros']
+>>> syn_fetcher("run")
+{'lead', 'go', 'hunt_down', 'trial', 'break_away', 'carry', 'execute', 'range', 'tend', 'run_away', 'footrace', 'take_to_the_woods', 'guide', 'hunt', 'bleed', 'campaign', 'track_down', 'run_for', 'running', 'runnel', 'work', 'prevail', 'persist', 'melt_down', 'course', 'fly_the_coop', 'endure', 'move', 'turn_tail', 'run', 'play', 'outpouring', 'flow', 'scarper', 'ply', 'tally', 'head_for_the_hills', 'running_game', 'foot_race', 'draw', 'melt', 'black_market', 'extend', 'ladder', 'race', 'political_campaign', 'be_given', 'escape', 'rill', 'streamlet', 'bunk', 'lean', 'discharge', 'function', 'test', 'hightail_it', 'feed', 'consort', 'ravel', 'scat', 'die_hard', 'pass', 'rivulet', 'unravel', 'incline', 'operate', 'running_play', 'streak', 'lam'}
+>>> dictionary.synonym("run")
+['break', 'spurt', 'rush', 'race', 'canter']
+

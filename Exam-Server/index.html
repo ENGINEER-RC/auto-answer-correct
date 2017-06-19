@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet"   type = "text/css"   href = "css/one.css" />
+<style>
+.spacey{
+	background-color:#ffffcc;
+	border:1px solid #cccc99;
+}
+.wordy{
+	background-color:#c0f1ff;
+	border:1px solid #99cccc;
+	padding: 0px 2px;
+}
+span{margin:0px 5px 10px 0px;float:left;}
+td{
+	vertical-align:top;
+	padding:5px;
+}
+div, body{
+	text-align:center;margin:0px auto;
+}
+#main_ques {
+	width:650px;margin:6px;
+}
+.dimScreen
+{
+    position:fixed;
+    padding-top:40vh;
+    margin:0;
+    top:0;
+    left:0;
+	text-align:center;
+	visibility:hidden;
+	z-index:-5;
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,0.4);
+}
+.answerDiv
+{
+    position:relative;
+    padding-top:10vh;
+    margin:0;
+    top:0;
+    left:0;
+	text-align:center;
+	visibility:hidden;
+	z-index:-15;
+    width: 100vw;
+    height: 100v;
+    background:url('images/work.jpg');
+	background-attachment: fixed;
+	overflow-y: scroll;
+	position: absolute;
+	height: 100%;
+}
+#main-answer{
+width:800px;
+padding:40px;
+background:rgba(255,255,255,0.8);
+}
+</style>
+<script src="javascript/jquery.js"></script>
+<script src="javascript/jsscript1.js"></script>
+</head>
+<body >
+<textarea style="visibility:hidden;" id="LMAO"></textarea>
+	<div id="Lol">
+   <br>
+   <h2>div:maindiv</h2><div style="text-align:left;display:inline-block;">
+   1.Use Space after fullstop to start a new sentance.<br>
+   2.Enter dates with a standard "DD-MM-YYYY" format.<br>
+   3.Use space to divide or distinguish 2 words.</div><br><br>
+   <div id="maindiv" >
+      <table border=1>
+         <tr>
+            <th colspan=2 style="text-align:center">Enter Question and Answer</th>
+         </tr>
+         <tr>
+            <td>Question: </td>
+            <td><input id="main_ques"></td>
+         </tr>
+         <td>Answer:</td>
+         <td>
+            <textarea rows="10" cols="100" id="haha" ></textarea>
+         </td>
+         </tr>
+      </table>
+      Invokes:seqs()&nbsp;<input type="checkbox" onchange='seqs(this.id);' id="seq"> Sequence <br><br>
+      <a href='#f1'><button onclick='alerter();'  >Go</button></a>&nbsp;&nbsp;Invokes:alerter()->wresult()
+   </div>
+<br><br>
+   <h2  id="f1">div:result</h2>
+   <div id="result" ></div>
+<br><br>
+   <h2 id="f2">div:keys</h2>
+   <table border=1 style="width:500px;">
+		<tr><td style="background-color:#c0f1ff">&nbsp;&nbsp;&nbsp;</td><td>No Selection</td><td>Zero clicks</td></tr>
+		<tr><td style="background-color:#ff9999" >&nbsp;&nbsp;&nbsp;</td><td>Constant Keyword</td><td>When Clicked Once</td></tr>
+		<tr><td style="background-color:#99ff99" >&nbsp;&nbsp;&nbsp;</td><td>Variable Keyword</td><td>When Clicked Twice</td></tr>
+		<tr><td style="background-color:#c0f1ff" >&nbsp;&nbsp;&nbsp;</td><td>Back To No Selection</td><td> When Clicked 3rd time returns to no selection</td></tr>
+	</table><br><br>
+   <div id="keys" ></div>
+<br><br>
+   <h2 id="f3">div:syns</h2>
+   <table border=1 style="width:500px;">
+     <tr><td> 1.</td><td>Do not Choose or enter variations of the same word.<br>
+     For Example connected,connect,connection,connects<br>
+	 All get conveted to "connect" after portstemming the word</td></tr>
+     <tr><td> 2.</td><td>Only 5 Variables or variations can be added.</td></tr>
+     <tr><td> 3.</td><td>Clicking on the synonyms they get deleted<br> 
+	 Clicking on suggested synonyms they move to synonyms<br>
+	 Via the right most column we can added custom synonyms</td></tr>
+   </table><br><br>
+   <div id="syns" ></div>
+<br><br>
+   <h2 id="f4">div:submit</h2>
+   <div id="ssubmit" ></div>
+   <div class="dimScreen" id="dimScreen">
+   <img src="images/loading.gif" height="100px"/>
+   </div>
+<br><br>
+   </div>
+      <div class="answerDiv" id="stickytypeheader">
+   <div id="main-answer">
+   <h2 id="xquestion">LOL</h2>
+   <h3 id="xanswer">uuiy</h3>
+   1.Please Make Sure Each Word is seperated by a Space " " before submitting your answer.<br>
+   2.Enter data with a standard DD-MM-YYYY format.<br>
+   3.Explicitly insert each of your points in separate boxes<br><br>
+   <textarea rows="3" cols="100" id="ans0" ></textarea>
+   <button  onclick='document.getElementById("ans0").outerHTML="";this.outerHTML="";'>Delete point</button>
+   <br><br>
+   <button id="add_new" onclick="new_text(0)">Add New Point</button><br>Invokes:new_text();<br><br><br>
+   <button onclick="get_answer_json();">Submit Answer</button><br>Invokes:get_answer_json();<br><br><br>
+   <div id="answer_data">
+   </div>
+   
+   </div></div>
+   
+
+
+   
+   
+</body>
+</html>

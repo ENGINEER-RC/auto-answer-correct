@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet"   type = "text/css"   href = "one.css" />
+<style>
+.spacey{
+	background-color:#ffffcc;
+	border:1px solid #cccc99;
+}
+.wordy{
+	background-color:#c0f1ff;
+	border:1px solid #99cccc;
+	padding: 0px 2px;
+}
+span{margin:0px 5px 10px 0px;float:left;}
+td{
+	vertical-align:top;
+	padding:5px;
+}
+div, body{
+	text-align:center;margin:0px auto;
+}
+#main_ques {
+	width:650px;margin:6px;
+}
+.dimScreen
+{
+    position:fixed;
+    padding-top:40vh;
+    margin:0;
+    top:0;
+    left:0;
+	text-align:center;
+	visibility:hidden;
+	z-index:-5;
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,0.4);
+}
+.answerDiv
+{
+    //position:fixed;
+    padding-top:10vh;
+    margin:0;
+    top:0;
+    left:0;
+	text-align:center;
+	//visibility:hidden;
+	//z-index:-15;
+    width: 100%;
+    height: 100%;
+    background:url('work.jpg');
+	background-attachment: fixed;
+}
+#main-answer{
+width:800px;
+padding:40px;
+background:rgba(255,255,255,0.8);
+}
+</style>
+<script src="jquery.js"></script>
+<script src="jsscript1.js"></script>
+</head>
+<body >
+   <div class="answerDiv" id="answerDiv">
+   <div id="main-answer">
+   <h2 id="xquestion">LOL</h2>
+   <h3 id="xanswer">uuiy</h3><br>
+   <textarea rows="3" cols="100" id="ans0" ></textarea>
+   <button  onclick='document.getElementById("ans0").outerHTML="";this.outerHTML="";'>Delete point</button>
+   <br><br>
+   <button id="add_new" onclick="new_text(0)">Add New Point</button><br>Invokes:new_text();<br><br><br>
+   <button onclick="get_answer_json();">Submit Answer</button><br>Invokes:get_answer_json();<br><br><br>
+   <div id="answer_data">
+   </div>
+   
+   </div>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   </div>
+</body>
+</html>

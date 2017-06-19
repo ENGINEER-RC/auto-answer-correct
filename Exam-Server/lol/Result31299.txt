@@ -1,0 +1,52 @@
+Static Loading Time In Python: 3.566326
+
+langvar= 0.8
+keylostvar= 0.5
+garbagevar1= 1.5
+garbagevar2= 10
+levenshtein Fault tolerance=0.2
+
+Replacing and Encoding JSON data In Python: 3.566326
+
+Calcaulating Garbage: 3.566326
+
+Marks After Garbage Evaluation: 100.000000
+
+Sentance Tokenization of Student Answer : 3.566326
+
+Sentance 0: fdsfsdfsdfsdfsdfdf dfghfdgsdfg not
+Sentance 1: dsfsdfsdfdsf sdfdsfdsf dfghdfghfdhh
+Sentance 2: sdfsdfdsfsdf sdfdsfdsfsdf fdhgfdhfdshfshhdf
+
+Finding Negations of Answer String | Word Tozenizing Answers | Grammar Checking : 7.285266
+
+Grammar Matrix After parsing [1, 1, 1]
+
+Negation Matrix After parsing [1, 0, 0]
+
+Parsing qna keyword data into useful format : 7.285266
+Metadata to keywords [1, 1, 2, 3]
+
+Cross Matrix:  [] 
+
+
+Sentance Keyword 2: ['an_increased']
+Tuppledata per Keyword:  [0, 0, 0] 
+
+Sentance Keyword 2: ['business', 'business_concern']
+Tuppledata per Keyword:  [0, 0, 0] 
+
+Cross Matrix:  [0, 0, 0] 
+
+
+matching student Answer data keywords With Stem and levenshtein
+Generating Cross-Matrix result based on qna keyword data: 7.316518
+
+cross matrix Tupple1: [2, 0.0, 0]
+Marks For This point Won't be alloted: Reason-Negation
+Marks for Alloted for point 0: 0.000000
+
+Final Matrix Operations and Marks Calculation Percentage Wise
+Final Marks Assigned To Student For This Answer: 0
+
+Total Time Spent In python: 7.316518

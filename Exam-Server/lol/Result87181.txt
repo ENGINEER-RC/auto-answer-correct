@@ -1,0 +1,32 @@
+Static Loading Time In Python: 3.689133
+
+langvar= 0.8
+keylostvar= 0.5
+garbagevar1= 1.5
+garbagevar2= 10
+levenshtein Fault tolerance=0.2
+
+Replacing and Encoding JSON data In Python: 3.689133
+
+Calcaulating Garbage: 3.689133
+
+Marks After Garbage Evaluation: 100.000000
+
+Sentance Tokenization of Student Answer : 3.689133
+
+Sentance 0: fdsfsdfsdfsdfsdf
+Sentance 1: dsfsdfsdfdsf sdfdsfdsf
+Sentance 2: sdfsdfdsfsdf sdfdsfdsfsdf
+
+Finding Negations of Answer String | Word Tozenizing Answers | Grammar Checking : 7.454950
+
+Grammar Matrix After parsing [1, 1, 1]
+
+Negation Matrix After parsing [0, 0, 0]
+
+Parsing qna keyword data into useful format : 7.454950
+Metadata to keywords [1, 1, 2, 3]
+
+Cross Matrix:  [] 
+
+
